@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form >
+        <fieldset>
+            <legend>Cadastro</legend>
+            <input type="text" id="Nome" placeholder="Nome">
+            <input type="number" id="altura" placeholder="Altura em metros, Ex: 1.78">
+            <input type="number" id="Peso" placeholder="Peso em Quilos">
+            <button type="button" onclick="calcular()" >Calcular</button>
+            <button type="reset">Limpar</button>
+        </fieldset>
+    </form>
+    <section>
+        <table>
+            <thead>
+                <tr>
+                <th>Nome</th>
+                <th>Altura</th>
+                <th>Peso</th>
+                <th>IMC</th>
+                <th>Situação</th>
+                </tr>
+            <tbody id="Cadastro"></tbody>
+            </thead>
+        </table>
+    </section>
+                
+    
+    <script src="java.js"></script>
+</body>
+
+</html>
